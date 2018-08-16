@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> -->
+		<meta name="description" content="sample.co.ke">
+    <meta http-equiv="cleartype" content="on">
+		<!-- staging start -->
+    <meta name="robots" content="noindex,nofollow"/>
+		<!-- End staging -->
+
+		<!-- live start -->
+			<!-- <meta name="robots" content="index, follow"> -->
+		<!-- End live -->
+
+		<title>Sample Page Title</title>
+		<link href="" rel="stylesheet" type="text/css">
+
+	</head>
+
+	<body>
+    <header>
+			<section class="">
+				<div class="">
+				</div>
+
+		</section>
+		</header>
+
+		<!-- Page content start -->
+		<section class="">
+			<div class="">
+				<p>Body</p>
+			</div>
+		</section>
+		<!-- End Page content -->
+
+
+
+    <!-- Footer start -->
+		<footer>
+			<section class="">
+				<div class="">
+					<p>Footer</p>
+				</div>
+
+			</section>
+
+
+		</footer>
+    <!-- Footer End -->
+
+    <!-- Smooth scroll start -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" async></script>
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a[href^="#"]').bind('click.smoothscroll', function(e) {
+        e.preventDefault();
+        var target = this.hash;
+
+            $('html, body').stop().animate({
+                'scrollTop' : $(target).offset().top
+            }, 900, 'swing', function() {
+                window.location.hash = target;
+            });
+        });
+      });
+    </script>
+    <!-- Smooth scroll End -->
+
+    <!-- Google Analytics Start -->
+    <!-- Please replace UA-XXXXX-Y -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    	<!-- End Google Analytics -->
+  </body>
+</html>
