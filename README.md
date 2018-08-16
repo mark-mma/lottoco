@@ -1,6 +1,6 @@
 # Staging area for Lotto
 
-* CSS framework based on [YAML](http://mincss.com)
+* CSS framework based on [YAML](http://www.yaml.de/)
 * Version 1.0.0
 
 # Set Up
