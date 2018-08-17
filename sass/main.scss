@@ -3,12 +3,19 @@
 @import "compass/css3";
 @import "compass/utilities";
 
+//YAML framework
+@import "vendor/yaml";
+
 //@import "base/variables";
 @import "base/mixins";
 @import "base/reset";
 @import "base/extends";
 @import "base/typography";
 @import "base/colors";
+
+//layout
+@import "layout/header";
+@import "layout/footer";
 
 //Components
 @import "components/buttons";

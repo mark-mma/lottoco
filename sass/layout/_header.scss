@@ -1,0 +1,13 @@
+header {
+  background: $mid-grey;
+  z-index: 1;
+}
+.logo {
+  display: inline-block;
+
+  img {
+    display: inline-block;
+    // max-width: 150px;
+    margin: 0;
+  }
+}
