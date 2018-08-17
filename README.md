@@ -5,4 +5,4 @@
 
 # Set Up
 * Install [Sass & Compass](http://thesassway.com/beginner/getting-started-with-sass-and-compass)
-* Sass compiled using [Koala](http://koala-app.com/)
+* Sass compiled using [Compass](http://compass-style.org/)
