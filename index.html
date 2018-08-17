@@ -142,7 +142,25 @@
 			</div>
 		</footer>
 
+		<script type="text/javascript" src="js/all.js" async></script>
+		<!-- Smooth scroll start -->
+    <!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js" async></script> -->
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a[href^="#"]').bind('click.smoothscroll', function(e) {
+        e.preventDefault();
+        var target = this.hash;
+
+            $('html, body').stop().animate({
+                'scrollTop' : $(target).offset().top
+            }, 900, 'swing', function() {
+                window.location.hash = target;
+            });
+        });
+      });
+    </script>
+    <!-- Smooth scroll End -->
 	<!-- full skip link functionality in webkit browsers -->
-	<script src="sass/vendor//yaml/core/js/yaml-focusfix.js"></script>
+	<!-- <script type="text/javascript" src="js/yaml-focusfix.js"></script> -->
 	</body>
 </html>
