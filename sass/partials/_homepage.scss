@@ -5,11 +5,15 @@
 .homepage-latest-winners  {
   text-align: center;
   padding: 1.42857em;
-  h1, h2, h3 {
+  h1, h2, h5 {
     margin-bottom: 0.250em;
   }
-  p {
-    margin-bottom: 0.938em;
+  h3 {
+    margin-bottom: 0.500em;
+  }
+
+  ol, ul {
+    text-align: left;
   }
 }
 
@@ -26,6 +30,43 @@
 }
 .homepage-how-to-play {
   background: $mid-grey;
+  .play-instructions {
+    p {
+      text-align: left;
+    }
+  }
+  .mpesa-instructions {
+    @media screen and (max-width:800px) {
+      [class*="ym-g"],
+      [class*="ym-gbox"] {
+        display: block;
+        float: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+      ol {
+        margin-left: 15px;
+      }
+    }
+
+    #last-list {
+      margin-right: 0;
+    }
+    ol {
+      margin-right: 10px;
+      margin-left: 10px;
+
+      @media screen and (max-width: 760px) {
+        margin-right: 0;
+      }
+      li {
+        font-size: 95%;
+      }
+    }
+  }
+
+
 }
 .homepage-latest-results {
   background: $light-grey;
