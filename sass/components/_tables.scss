@@ -10,9 +10,13 @@ table {
     margin: .5em 0 .75em;
   }
   tr {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    padding: .35em;
+    background-color: lighten($light-grey, 12%);
+    border: 1px solid $light-grey;
+    padding: 0.35em;
+    &:nth-child(even) {
+       background: $white;
+
+    }
   }
   th,td {
     padding: .625em;
@@ -56,14 +60,14 @@ table {
     td {
       border-bottom: 1px solid #ddd;
       display: block;
-      font-size: 0.875em;
+      font-size: 1.00em;
       text-align: right;
       font-weight: bold;
       &:before {
         content: attr(data-label);
         float: left;
         font-weight: normal;
-        font-size: 0.813em;
+        font-size: 0.750em;
         // font-weight: bold;
         text-transform: uppercase;
       }
@@ -71,7 +75,8 @@ table {
         border-bottom: 0;
       }
     }
-    .draw-date {
+    .draw-date,
+    .category {
       background-color: $black;
       color: $white;
     }
