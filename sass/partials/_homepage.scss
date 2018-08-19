@@ -1,5 +1,8 @@
-.homepage-intro {
-  background: $mid-grey;
+.homepage-intro,
+.homepage-tickets,
+.homepage-how-to-play,
+.homepage-latest-results,
+.homepage-latest-winners  {
   text-align: center;
   padding: 1.42857em;
   h1, h2, h3 {
@@ -8,5 +11,20 @@
   p {
     margin-bottom: 0.938em;
   }
-  
+}
+
+.homepage-intro {
+  background: $mid-grey;
+}
+.homepage-tickets {
+  background: $light-grey;
+}
+.homepage-how-to-play {
+  background: $mid-grey;
+}
+.homepage-latest-results {
+  background: $light-grey;
+}
+.homepage-latest-winners {
+  background: $mid-grey;
 }
