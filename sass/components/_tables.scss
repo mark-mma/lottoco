@@ -1,3 +1,80 @@
 table {
-  overflow: hidden;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  th,td {
+    padding: .625em;
+    text-align: center;
+  }
+  td {
+    border-top: none;
+  }
+  th {
+    background-color: $black;
+    color: $white;
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    border-bottom: none;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+    caption {
+      font-size: 1.3em;
+    }
+    thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    tr {
+      display: block;
+      margin-bottom: .625em;
+    }
+    td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: 0.875em;
+      text-align: right;
+      font-weight: bold;
+      &:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: normal;
+        font-size: 0.813em;
+        // font-weight: bold;
+        text-transform: uppercase;
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+    .draw-date {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
 }
