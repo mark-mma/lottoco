@@ -15,6 +15,11 @@
 
 .homepage-intro {
   background: $mid-grey;
+  @media screen and (max-width: 760px) {
+    h1 {
+      font-size: 250%;
+    }
+  }
 }
 .homepage-tickets {
   background: $light-grey;
