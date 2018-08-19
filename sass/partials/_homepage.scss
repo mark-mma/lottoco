@@ -5,7 +5,7 @@
 .homepage-latest-winners  {
   text-align: center;
   padding: 1.42857em;
-  h1, h2, h5 {
+  h1, h2, h4, h5 {
     margin-bottom: 0.250em;
   }
   h3 {
@@ -15,6 +15,7 @@
   ol, ul {
     text-align: left;
   }
+
 }
 
 .homepage-intro {
@@ -50,12 +51,10 @@
       }
     }
 
-    #last-list {
-      margin-right: 0;
-    }
+
     ol {
-      margin-right: 10px;
-      margin-left: 10px;
+      margin-right: 12px;
+      ;
 
       @media screen and (max-width: 760px) {
         margin-right: 0;
@@ -69,8 +68,8 @@
 
 }
 .homepage-latest-results {
-  background: $light-grey;
+  background: $white;
 }
 .homepage-latest-winners {
-  background: $mid-grey;
+  background: $light-grey;
 }
