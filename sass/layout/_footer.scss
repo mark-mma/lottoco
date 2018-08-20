@@ -19,7 +19,14 @@ footer {
     .ym-hlist {
       background: none;
       ul {
-        padding-left: 0
+        padding-left: 0;
+        li {
+          @media screen and (max-width: 768px) {
+            float: none;
+            display: block;
+            margin-bottom: 0.25em;
+          }
+        }
       }
       ul li a {
         text-shadow: none;
@@ -29,28 +36,79 @@ footer {
           text-decoration: none;
           outline: 0 none;
           color: $grey;
+          }
+
         }
       }
-    }
-    .ym-hlist ul li a, .ym-hlist ul li strong {
+      .ym-hlist ul li a, .ym-hlist ul li strong {
         color: $mid-grey;
         display: block;
         font-size: 1em;
         line-height: 2em;
         padding: 0 0.5em;
+
+        @media screen and (max-width: 768px) {
+          padding-left: 0;
+        }
+      }
+      .ym-hlist ul li a {
+        &:first-of-type {
+          padding-left: 0;
+        }
+      }
     }
+    .footer-list {
+      color: $mid-grey;
+      p {
+        font-size: 0.938em;
+      }
+      ul {
+        list-style-type: none !important;
+        li {
+          margin-left: 0;
+          a {
+            color: $mid-grey;
+
+            &:hover {
+              background: none;
+              color: $grey;
+            }
+          }
+        }
+      }
+
     }
     .bclb-license {
       padding: 0;
       padding-top: 0.750em;
       padding-bottom: 1.42857em;
       color: $mid-grey;
-      
+
       p {
         font-size: 0.938em;
       }
-      @media screen and (max-width: 760px) {
 
+    }
+    .copyright {
+      padding: 1.42857em;
+      padding-right: 0;
+      text-align: right;
+      color: $mid-grey;
+      font-size: 0.813em;
+      @media screen and (max-width: 768px) {
+        text-align: left;
+        padding-left: 0;
+      }
+
+    }
+    @media screen and (max-width: 768px) {
+      [class*="ym-g"],
+      [class*="ym-gbox"] {
+        display: block;
+        float: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
       }
     }
 
