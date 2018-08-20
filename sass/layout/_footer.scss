@@ -11,10 +11,47 @@
 
 footer {
   padding: 1.42857em;
+  background: $white;
+  background-color: $white;
   .footer-menu {
+    padding-right: 1.42857em;
+    padding-bottom: 1.42857em;
     .ym-hlist {
       background: none;
+      ul {
+        padding-left: 0
+      }
+      ul li a {
+        text-shadow: none;
+        &:hover {
+          background: none;
+          border-radius: 0;
+          text-decoration: none;
+          outline: 0 none;
+          color: $grey;
+        }
+      }
+    }
+    .ym-hlist ul li a, .ym-hlist ul li strong {
+        color: $mid-grey;
+        display: block;
+        font-size: 1em;
+        line-height: 2em;
+        padding: 0 0.5em;
+    }
+    }
+    .bclb-license {
+      padding: 0;
+      padding-top: 0.750em;
+      padding-bottom: 1.42857em;
+      color: $mid-grey;
+      
+      p {
+        font-size: 0.938em;
+      }
+      @media screen and (max-width: 760px) {
+
+      }
     }
 
   }
-}
