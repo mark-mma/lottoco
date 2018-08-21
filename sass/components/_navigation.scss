@@ -2,7 +2,7 @@
   // background: $grey;
   margin-top: 15px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     border: 1px $light-grey solid;
   }
 }
@@ -12,7 +12,7 @@
   .menu-toggle {
     display: none;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
       display: block;
     }
   }
@@ -92,7 +92,7 @@
     display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -102,7 +102,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     // position: absolute;
