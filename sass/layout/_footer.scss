@@ -11,7 +11,8 @@
 
 footer {
   padding: 1.42857em;
-  background: #ffffff;
+  background: $white;
+  background-color: $white;
   // background: $white;
   // background-color: $white;
   .footer-menu {
@@ -22,6 +23,7 @@ footer {
       ul {
         padding-left: 0;
         li {
+          margin-right: 18px;
           @media screen and (max-width: 768px) {
             float: none;
             display: block;
@@ -96,9 +98,21 @@ footer {
       text-align: right;
       color: $mid-grey;
       font-size: 0.813em;
+      @media screen and (max-width : 1200px){
+        padding-right: 1.42857em;
+      }
       @media screen and (max-width: 768px) {
         text-align: left;
         padding-left: 0;
+      }
+
+    }
+    @media screen and (max-width : 1200px){
+      .footer-menu {
+        .ym-hlist ul li {
+            // font-size: 0.938em;
+            // margin-right: 18px;
+        }
       }
 
     }
