@@ -11,7 +11,7 @@
   // background-color: #333;
   .menu-toggle {
     display: none;
-    
+
     @media screen and (max-width: 600px) {
       display: block;
     }
@@ -97,7 +97,7 @@
     display: none;
   }
   .topnav a.icon {
-    float: right;
+    // float: right;
     display: block;
   }
 }
@@ -105,10 +105,10 @@
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
-    position: absolute;
+    // position: absolute;
     right: 0;
     top: 0;
-    border-bottom: none;
+    border-bottom: 1px $light-grey solid;
   }
   .topnav.responsive a {
     float: none;
