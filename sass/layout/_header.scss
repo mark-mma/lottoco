@@ -48,6 +48,13 @@ header {
     }
   }
 
+  @media screen and (max-width: 1200px) {
+    .user-menu-wrap {
+      .ym-searchform input[type="search"] {
+          width: 50%;
+      }
+    }
+  }
   @media screen and (max-width: 800px) {
 
   .user-menu-wrap {
@@ -59,9 +66,9 @@ header {
           margin-top: 7px;
         }
 
-        .ym-searchform input[type="search"] {
-            width: 50%;
-        }
+        // .ym-searchform input[type="search"] {
+        //     width: 50%;
+        // }
 
       }
       .ym-searchform {
