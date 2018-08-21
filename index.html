@@ -29,7 +29,95 @@
 	<body>
 
 		<header>
+
+
+
 			<div class="ym-wrapper">
+				<div class="ym-grid linearize-level-1">
+					<div class="ym-g20 ym-gl">
+						<div class="ym-gbox">
+
+								<div class="logo">
+									<a href="index.html"><img src="https://placehold.it/180x90" alt="Logo"></a>
+								</div>
+
+						</div>
+					</div>
+
+					<div class="ym-g80 ym-gr">
+						<div class="ym-gbox">
+
+							<div class="ym-grid linearize-level-1">
+								<div class="user-menu-wrap">
+
+									 <div class="ym-g62 ym-gl">
+										 <ul id="user-menu">
+											 <li><a href="#">LOGIN</a></li>
+											 <li><a href="#">REGISTER</a></li>
+										 </ul>
+									 </div>
+
+									 <div class="ym-g38 ym-gr">
+										 <form class="ym-searchform">
+											 <input class="ym-searchfield" type="search" placeholder="Search..." />
+											 <input class="ym-button ym-next" type="submit" value="Search" />
+										 </form>
+									 </div>
+
+									 <div class="ym-grid">
+										 <div class="ym-gr">
+
+
+										 <div class="nav-wrap">
+
+											 <div class="topnav" id="myTopnav">
+												 <a href="#home" class="menu-toggle">MENU</a>
+												 <a href="#play-now">PLAY NOW</a>
+												 <a href="#how-to-play">HOW TO PLAY</a>
+												 <a href="#">WINNERS <span class="down-arrow">&nbsp;</span></a>
+												 <a href="#">RESULTS</a>
+												 <a href="#">NEWS</a>
+ 											  <!-- <a href="#home" class="active">Home</a>
+ 											  <a href="#news">News</a>
+ 											  <a href="#contact">Contact</a>
+ 											  <div class="dropdown">
+ 											    <button class="dropbtn">Dropdown
+ 											      <i class="fa fa-caret-down"></i>
+ 											    </button>
+ 											    <div class="dropdown-content">
+ 											      <a href="#">Link 1</a>
+ 											      <a href="#">Link 2</a>
+ 											      <a href="#">Link 3</a>
+ 											    </div>
+ 											  </div>
+ 											  <a href="#about">About</a> -->
+ 											  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+ 											</div>
+
+										</div>
+
+									</div>
+
+									 </div>
+
+								 </div>
+							</div>
+
+
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+
+
+
+
+
+			<!-- <div class="ym-wrapper">
 				<div class="ym-grid linearize-level-1">
 					<div class="ym-g20 ym-gl">
 						<div class="ym-gbox">
@@ -68,7 +156,7 @@
 										 <div class="nav-wrap">
 
 											<nav class="nav-collapse">
-												<!-- <span>&#9776; MENU</span> -->
+
 
 													<ul id="menu">
 														<li><a href="#play-now">PLAY NOW</a></li>
@@ -80,8 +168,6 @@
 
 											</nav>
 											<div class="menu-toggle"><a id="toggle" href="#" class="closed"><strong>&#9776;</strong> MENU</a></div>
-
-											<!-- <button id="toggle" class="closed">Toggle Menu</button> -->
 
 										</div>
 
@@ -99,7 +185,7 @@
 
 
 				</div>
-			</div>
+			</div> -->
 
 		</header>
 
@@ -349,26 +435,19 @@
 
 		<script type="text/javascript" src="js/all.js" async></script>
 
-		/
+
 
 		<!-- Responsive Nav start -->
 		<script>
-      var navigation = responsiveNav(".nav-collapse", {
-        animate: true,                    // Boolean: Use CSS3 transitions, true or false
-        transition: 284,                  // Integer: Speed of the transition, in milliseconds
-        label: "Menu",                    // String: Label for the navigation toggle
-        insert: "after",                  // String: Insert the toggle before or after the navigation
-        customToggle: "#toggle",                 // Selector: Specify the ID of a custom toggle
-        closeOnNavClick: true,           // Boolean: Close the navigation when one of the links are clicked
-        openPos: "relative",              // String: Position of the opened nav, relative or static
-        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
-        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
-        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
-        init: function(){},               // Function: Init callback
-        open: function(){},               // Function: Open callback
-        close: function(){}               // Function: Close callback
-      });
-    </script>
+			function myFunction() {
+			    var x = document.getElementById("myTopnav");
+			    if (x.className === "topnav") {
+			        x.className += " responsive";
+			    } else {
+			        x.className = "topnav";
+			    }
+			}
+			</script>
 		<!-- End Responsive Nav -->
 
 		<!-- Smooth scroll start -->
