@@ -29,3 +29,11 @@ q {
   font-family:  Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
+a:hover, a:focus {
+    // background-color: #4d87c7;
+    // background: none;
+    background-color: transparent;
+    color: blue;
+    text-decoration: none;
+
+}
