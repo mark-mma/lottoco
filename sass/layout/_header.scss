@@ -128,6 +128,13 @@ header {
       }
     }
   }
+  @media screen and (max-width: 300px) {
+    .user-menu-wrap {
+      .ym-searchform input[type="search"] {
+          width: 53%;
+      }
+    }
+  }
   @media screen and (max-width: 250px) {
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
