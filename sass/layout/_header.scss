@@ -7,12 +7,7 @@ header {
   .logo-wrap {
     float: left;
   }
-  .ym-hlist {
-    float: right;
-    ul {
-      float: right;
-    }
-  }
+
   .user-menu-wrap {
     .ym-searchform {
         padding: 0.5em 1.5em;
@@ -38,19 +33,24 @@ header {
             margin-right: 27px;
           }
         }
-
     }
   }
-  @media screen and (max-width: 760px) {
-    .ym-hlist {
-      float: none;
-      ul {
-        float: none;
-      }
-    }
-    .user-menu-wrap {
+
+  @media screen and (max-width: 800px) {
+
+  .user-menu-wrap {
+    padding-top: 15px;
       #user-menu {
         float: none;
+        display: block;
+        li {
+          margin-top: 7px;
+        }
+
+      }
+      .ym-searchform {
+        padding-top: 0;
+        padding-bottom: 0;
       }
     }
     .user-menu-wrap [class*="ym-g"],
@@ -61,6 +61,14 @@ header {
       margin: 0;
       width: 100%;
     }
+  }
+  @media screen and (max-width: 600px) {
+    .user-menu-wrap {
+      #user-menu {
+        display: inline;
+      }
+    }
+
   }
 
 }
