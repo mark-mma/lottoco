@@ -9,6 +9,13 @@ header {
   }
 
   .user-menu-wrap {
+    .ym-button,
+    .ym-form button,
+    .ym-form input[type="button"],
+    .ym-form input[type="reset"],
+    .ym-form input[type="submit"] {
+      padding: 0 1em;
+    }
     .ym-searchform {
         padding: 0.5em 1.5em;
         padding-right: 0;
@@ -103,6 +110,9 @@ header {
         li {
           margin-bottom: 15px;
         }
+      }
+      svg  {
+        color: $white;
       }
     }
 

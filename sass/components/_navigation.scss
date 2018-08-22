@@ -46,13 +46,16 @@
 }
 
 .dropdown .dropbtn {
-    font-size: 17px;
+    // font-size: 17px;
+    font-size: 117%;
+    color: $mid-grey;
     border: none;
     outline: none;
-    color: white;
+    // color: white;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
+    font-weight: $bold;
     margin: 0;
 }
 
@@ -77,6 +80,7 @@
 .topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #555;
   color: white;
+  cursor: pointer;
 }
 .topnav a:hover {
   background-color: transparent;
