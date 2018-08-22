@@ -62,12 +62,19 @@ footer {
     }
     .footer-list {
       color: $mid-grey;
+      svg {
+        // display: none;
+
+      }
+
       p {
         font-size: 0.938em;
       }
       ul {
         list-style-type: none !important;
+        margin-top: 7px;
         li {
+          // margin-bottom: 2px;
           margin-left: 0;
           a {
             color: $mid-grey;
@@ -76,6 +83,32 @@ footer {
               background: none;
               color: $grey;
             }
+          }
+        }
+      }
+       #social-media-links {
+        svg {
+          padding-top: 3px;
+        }
+        li {
+          a {
+            svg {
+              margin-right: 2px;
+              fill: $mid-grey;
+
+            }
+            &:hover {
+              svg {
+                fill:$grey;
+              }
+            }
+          }
+        }
+      }
+      #customer-care {
+        li {
+          &:first-of-type{
+            margin-bottom: 4px;
           }
         }
       }
@@ -93,17 +126,19 @@ footer {
 
     }
     .copyright {
-      padding: 1.42857em;
+      padding-top: 2.42857em;
       padding-right: 0;
       text-align: right;
       color: $mid-grey;
       font-size: 0.813em;
       @media screen and (max-width : 1200px){
+
         padding-right: 1.42857em;
       }
       @media screen and (max-width: 768px) {
         text-align: left;
         padding-left: 0;
+        padding-top:0.42857em;
       }
 
     }
