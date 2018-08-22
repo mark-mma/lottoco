@@ -92,6 +92,11 @@ footer {
         }
         li {
           a {
+
+            span {
+              position: relative;
+              top:-2px;
+            }
             svg {
               margin-right: 2px;
               fill: $mid-grey;
