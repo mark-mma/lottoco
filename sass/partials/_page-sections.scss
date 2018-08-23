@@ -3,3 +3,28 @@
     min-width: 0;
   }
 }
+.general-content {
+  background: $light-grey;
+  padding: 1.42857em;
+  h1, h2, h4, h5 {
+    margin-bottom: 0.250em;
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    margin-bottom: 0.500em;
+  }
+  p {
+    // text-align: left;
+  }
+  .intro {
+    font-size: 117%;
+    text-align: center;
+  }
+
+  ol, ul {
+    text-align: left;
+  }
+
+}
