@@ -3,6 +3,7 @@ header {
   // border-bottom: 1px solid $mid-grey;
   clear: both;
   padding: 1.42857em;
+  padding-bottom: 0;
   // z-index: 1;
   .logo-wrap {
     float: left;
@@ -118,6 +119,7 @@ header {
 
   }
   @media screen and (max-width: 400px) {
+    padding-bottom: 0.5em;
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
           width: 66%;
