@@ -53,6 +53,11 @@ header {
             margin-right: 27px;
           }
         }
+      .active {
+        color: $grey;
+        background: transparent;
+        cursor: text;
+      }
     }
   }
 

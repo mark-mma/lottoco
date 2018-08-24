@@ -16,13 +16,14 @@
       width: 100%;
   }
   .ym-form {
+    border: none;
     .ym-fbox {
-      padding: 0.5em 1.5em;
+      // padding: 0.5em 1.5em;
+      padding: 1em 2em;
     }
     input {
       font-size: 135%;
-      padding-top:0.5em;
-      padding-bottom: 0.5em;
+      padding:0.625em;
       margin-bottom: 0.75em;
       &::placeholder {
         color: $light-grey;
@@ -75,6 +76,9 @@
 
   @media screen and (max-width: 400px) {
     .ym-form {
+      .ym-fbox {
+        padding: 0.5em 1.5em;
+      }
       input {
         font-size: 110%;
       }
