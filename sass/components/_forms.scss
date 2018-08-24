@@ -4,6 +4,20 @@
     border: 1px $grey solid;
   }
 }
-
-
 // End Tickets
+
+.form-wrap {
+  margin: 0 auto;
+  .ym-form
+    input,
+    textarea,
+    select{
+      width: 100%;
+  }
+  .ym-fbox-check {
+    input {
+       width: auto;
+    }
+  }
+
+}
