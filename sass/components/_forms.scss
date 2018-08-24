@@ -71,7 +71,7 @@
     }
   }
 
-  
+
 
   @media screen and (max-width: 400px) {
     .ym-form {
@@ -85,6 +85,8 @@
           // position: relative;
           // top: 3px;
           float: none;
+          display: block;
+          line-height: 2;
         }
       }
       .register {
@@ -104,6 +106,29 @@
         }
       }
     }
+  }
+
+  @media screen and (max-width: 300px) {
+    .ym-form {
+      .register {
+        .ym-button {
+          // padding:  0.25em 0.5em;
+          margin-left: 0.25em;
+        }
+      }
+    }
+
+  }
+  @media screen and (max-width: 280px) {
+    .ym-form {
+      .register {
+        .ym-button {
+          // padding:  0.25em 0.5em;
+          margin: 0.25em 0;
+        }
+      }
+    }
+
   }
 
 }

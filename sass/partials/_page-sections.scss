@@ -38,8 +38,8 @@
   .error {
     text-align: center;
   }
-
   @media screen and (max-width:800px) {
+    padding-bottom: 3em;
     [class*="ym-g"] {
       display: block;
       float: none;
