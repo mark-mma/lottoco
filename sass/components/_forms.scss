@@ -44,6 +44,22 @@
         // top: 2px;
       }
     }
+    .require-text,
+    .agreement-text {
+      font-weight: normal;
+      font-size: 90%;
+    }
+    .required-text,
+     .agreement-text {
+      margin-bottom: 1em;
+      label {
+        font-weight: normal;
+        font-size: 95%;
+      }
+    }
+    .required-text {
+      margin-bottom: 0;
+    }
     .ym-button {
       padding-top:0.35em;
       padding-bottom: 0.35em;
@@ -104,6 +120,9 @@
         }
       }
     .ym-fbox-check {
+      input {
+         padding:0.125em;
+      }
         label {
           font-weight: normal;
           font-size: 90%;
