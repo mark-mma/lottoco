@@ -23,9 +23,19 @@
     font-size: 117%;
     text-align: center;
   }
-
   ol, ul {
     text-align: left;
   }
 
+}
+.login {
+  padding-bottom: 9em;
+  .box {
+    padding: 0.5em 1.42857em;
+  }
+  .success,
+  .warning,
+  .error {
+    text-align: center;
+  }
 }
