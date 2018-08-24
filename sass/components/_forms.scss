@@ -39,6 +39,8 @@
       }
       .reset-account {
         float: right;
+        // position: relative;
+        // top: 2px;
       }
     }
     .ym-button {
@@ -66,6 +68,41 @@
     label {
       font-weight: normal;
       font-size: 90%;
+    }
+  }
+
+  
+
+  @media screen and (max-width: 400px) {
+    .ym-form {
+      input {
+        font-size: 110%;
+      }
+      label {
+        font-weight: $bold;
+        font-size: 100%;
+        .reset-account {
+          // position: relative;
+          // top: 3px;
+          float: none;
+        }
+      }
+      .register {
+        label {
+          font-size: 90%;
+        }
+        .ym-button {
+          padding:  0.25em 0.5em;
+        }
+      }
+    .ym-fbox-check {
+        label {
+          font-weight: normal;
+          font-size: 90%;
+          position: relative;
+          top:-2px;
+        }
+      }
     }
   }
 

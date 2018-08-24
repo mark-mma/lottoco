@@ -38,4 +38,24 @@
   .error {
     text-align: center;
   }
+
+  @media screen and (max-width:800px) {
+    [class*="ym-g"] {
+      display: block;
+      float: none;
+      padding: 0;
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+  @media screen and (max-width:600px) {
+    [class*="ym-g"],
+    [class*="ym-gbox"] {
+      display: block;
+      float: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+  }
 }
