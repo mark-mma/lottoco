@@ -38,10 +38,12 @@
     }
     .sub-menu {
       .ym-hlist {
+
         display: flex;
         justify-content: space-around;
         ul {
           float: none;
+          padding: 0;
         }
       }
     }
@@ -49,4 +51,19 @@
   @media screen and (max-width: 800px) {
     margin-top: -2px;
   }
+  @media screen and (max-width: 600px) {
+    .ym-hlist {
+      ul {
+        // font-size: 95%;
+      }
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .ym-hlist {
+      ul {
+        font-size: 80%;
+      }
+    }
+  }
+
 }
