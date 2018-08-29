@@ -52,6 +52,7 @@
     margin-top: -2px;
   }
   @media screen and (max-width: 600px) {
+    font-size: 90%;
     .ym-hlist {
       ul {
         // font-size: 95%;
@@ -59,9 +60,18 @@
     }
   }
   @media screen and (max-width: 360px) {
+    font-size: 85%;
     .ym-hlist {
       ul {
-        font-size: 80%;
+        // font-size: 80%;
+      }
+    }
+  }
+  @media screen and (max-width: 300px) {
+    font-size: 80%;
+    .ym-hlist {
+      ul {
+        // font-size: 80%;
       }
     }
   }

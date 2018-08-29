@@ -163,6 +163,11 @@ header {
         .user-mobile-number {
           line-height: 2;
         }
+        li {
+          &:first-child {
+            margin-bottom: 0;
+          }
+        }
       }
       .ym-searchform {
         padding-top: 0.313em;
@@ -173,7 +178,7 @@ header {
     .user-menu-wrap {
       padding-top: 0;
       .ym-searchform input[type="search"] {
-          width: 62%;
+          width: 63%;
       }
     }
   }
