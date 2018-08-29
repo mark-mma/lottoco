@@ -1,4 +1,29 @@
 .sub-menu-wrap {
   background: $light-grey;
   padding: 1em;
+  .account-balance {
+    padding-top: 0.375em;
+    .balance-amount {
+      font-weight: bold;
+    }
+  }
+}
+.sub-menu {
+  .ym-hlist {
+    background: transparent;
+    ul {
+      float: right;
+      padding: 0 1.5em;
+      li {
+        a {
+          text-shadow: none;
+          color: $grey;
+          font-weight: bold;
+        }
+        strong {
+          text-shadow: none;
+        }
+      }
+    }
+  }
 }
