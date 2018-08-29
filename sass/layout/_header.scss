@@ -75,7 +75,7 @@ header {
   @media screen and (max-width: 1200px) {
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
-          width: 50%;
+          width: 58%;
       }
     }
   }
@@ -85,7 +85,7 @@ header {
     padding-top: 15px;
       #user-menu {
         float: none;
-        display: block;
+        display: inline-block;
         li {
           margin-top: 7px;
         }
@@ -96,7 +96,7 @@ header {
 
       }
       .ym-searchform {
-        padding-top: 0;
+        padding-top: 1.42857em;
         padding-bottom: 0;
         padding-left: 0;
       }
@@ -109,6 +109,11 @@ header {
       margin: 0;
       width: 100%;
     }
+    .user-menu-wrap {
+      .ym-searchform input[type="search"] {
+          width: 86%;
+      }
+    }
   }
   @media screen and (max-width: 600px) {
     .user-menu-wrap {
@@ -116,16 +121,17 @@ header {
         display: inline;
       }
       .ym-searchform {
-        padding-top: 0.5em;
+        padding-top: 1.42857em;
 
         padding-left: 0;
       }
       .ym-searchform input[type="search"] {
-          width: 71%;
+          width: 73%;
       }
       #user-menu {
         li {
           margin-bottom: 15px;
+          line-height: 1;
         }
       }
       svg  {
@@ -138,35 +144,35 @@ header {
     padding-bottom: 0.5em;
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
-          width: 66%;
+          width: 69%;
       }
     }
   }
   @media screen and (max-width: 360px) {
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
-          width: 65%;
+          width: 68%;
       }
     }
   }
   @media screen and (max-width: 320px) {
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
-          width: 60%;
+          width: 40%;
       }
     }
   }
   @media screen and (max-width: 300px) {
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
-          width: 53%;
+          width: 30%;
       }
     }
   }
   @media screen and (max-width: 250px) {
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
-          width: 44%;
+          // width: 44%;
       }
     }
   }
