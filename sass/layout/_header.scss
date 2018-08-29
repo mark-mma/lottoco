@@ -43,6 +43,7 @@ header {
 
         li {
           display: inline;
+          color: $mid-grey;
           float: left;
           font-size: 1.0em;
           line-height: 1;
@@ -52,12 +53,17 @@ header {
           &:first-child {
             margin-right: 27px;
           }
+
         }
       .active {
         color: $grey;
         line-height: 1;
         background: transparent;
         cursor: text;
+      }
+      .user-mobile-number {
+        color: $grey;
+        font-weight: bold;
       }
     }
   }
