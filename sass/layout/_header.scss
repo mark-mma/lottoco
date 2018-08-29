@@ -20,6 +20,7 @@ header {
     .ym-searchform {
         padding: 0.5em 1.5em;
         padding-right: 0;
+        text-align: right;
         .ym-searchfield {
           // -webkit-appearance: none;
           background: $white;
@@ -31,6 +32,9 @@ header {
           // outline: none;
           // -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
           // box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+      }
+      .ym-button {
+        margin-right: 0;
       }
     }
 
