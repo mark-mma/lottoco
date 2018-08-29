@@ -38,6 +38,8 @@
     }
     .sub-menu {
       .ym-hlist {
+        display: flex;
+        justify-content: space-around;
         ul {
           float: none;
         }
