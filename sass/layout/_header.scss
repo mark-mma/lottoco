@@ -119,18 +119,21 @@ header {
     .user-menu-wrap {
       #user-menu {
         display: inline;
+        .user-mobile-number {
+          line-height: 2;
+        }
       }
       .ym-searchform {
         padding-top: 1.42857em;
-
         padding-left: 0;
+        display: inline-block;
       }
       .ym-searchform input[type="search"] {
           width: 73%;
       }
       #user-menu {
         li {
-          margin-bottom: 15px;
+          margin-bottom: 10px;
           line-height: 1;
         }
       }
@@ -158,14 +161,14 @@ header {
   @media screen and (max-width: 320px) {
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
-          width: 40%;
+          width: 62%;
       }
     }
   }
   @media screen and (max-width: 300px) {
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
-          width: 30%;
+          width: 49%;
       }
     }
   }
