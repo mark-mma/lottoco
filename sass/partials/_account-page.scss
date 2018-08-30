@@ -80,6 +80,27 @@
 }
 // Datepicker start
   .datepicker-wrap {
+    // .ui-datepicker-title {
+    //   background: $grey;
+    //   color: $white;
+    //   font-weight: bold;
+    //   text-align: center;
+    //   padding: 0.35em;
+    //
+    // }
+    .ui-datepicker-calendar {
+      font-size: 90%;
+    }
+    table th, table td {
+      padding: .625em 0.5em;
+      text-align: center;
+    }
+    table th {
+      background: $mid-grey;
+    }
+    table tr {
+      background: $white;
+    }
 
     .ym-fbox {
       margin-bottom: 15px;
