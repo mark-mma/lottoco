@@ -94,6 +94,38 @@
     .ui-widget-header .ui-icon {
     background-image: url("../images/icons/ui-icons_222222_256x240.png");
     }
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+     {
+      border: none;
+      background: transparent;
+      /* background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; */
+        /* border: 1px solid #d3d3d3; */
+        /* background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; */
+        font-weight: normal;
+        color: $grey;
+    }
+    .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+      // border: 1px solid $grey;
+      border: none;
+      background: #fbf9ee url("../images/icons/ui-bg_glass_55_fbf9ee_1x400.png") 50% 50% repeat-x;
+      // color: #363636;
+      font-weight: bold;
+    }
+    .ui-widget.ui-widget-content {
+        // border: 1px solid #d3d3d3;
+        border: none;
+    }
+    .ui-widget-content {
+      // border: 1px solid #aaaaaa;
+      // background: #ffffff;
+      // color: #222222;
+      border: 1px solid $light-grey;
+      background: transparent;
+      color: $grey;
+    }
     table th, table td {
       padding: .625em 0.5em;
       text-align: center;
