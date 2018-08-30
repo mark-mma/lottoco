@@ -185,14 +185,21 @@ header {
   @media screen and (max-width: 300px) {
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
-          width: 49%;
+          width: 60%;
       }
     }
   }
-  @media screen and (max-width: 250px) {
+  @media screen and (max-width: 280px) {
     .user-menu-wrap {
       .ym-searchform input[type="search"] {
-          // width: 44%;
+          width: 55%;
+      }
+    }
+  }
+  @media screen and (max-width: 260px) {
+    .user-menu-wrap {
+      .ym-searchform input[type="search"] {
+          width: 49%;
       }
     }
   }
