@@ -30,6 +30,7 @@
       }
     }
   }
+
   @media screen and (max-width: 800px) {
     .account-balance {
       padding-top: 0;
@@ -77,3 +78,18 @@
   }
 
 }
+// Datepicker start
+  .datepicker-wrap {
+
+    .ym-fbox {
+      margin-bottom: 15px;
+      label {
+        line-height: 2.188;
+      }
+      select {
+        padding: 6px;
+      }
+    }
+
+  }
+// End Datepicker
