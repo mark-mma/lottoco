@@ -157,10 +157,56 @@
       margin-bottom: 15px;
       label {
         line-height: 2.188;
+        display: block;
       }
       select {
         padding: 6px;
       }
+    }
+
+    .mobile-datepicker {
+      // margin: 0 auto;
+      // display: flex;
+      // justify-content: center;
+      .date-wrap {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+    }
+    @media screen and (max-width: 768px) {
+      .ui-widget.ui-widget-content {
+          width: 36%;
+          margin: 0 auto
+      }
+
+      .js-datepicker {
+        display: none;
+      }
+      .ym-fbox {
+        label {
+          text-align: center;
+        }
+        select {
+          padding: 2px;
+        }
+      }
+      .mobile-datepicker {
+        .date-wrap {
+          text-align: center;
+        }
+
+      }
+
+    }
+    @media screen and (min-width: 800px) {
+
+
+      .mobile-datepicker {
+        display: none;
+      }
+
     }
 
   }
