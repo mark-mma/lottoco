@@ -15,6 +15,13 @@
 		<!-- End live -->
 
 		<link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/all.js"></script>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+		
 		<!--[if lte IE 7]>
 			<link href="sass/vendor/yaml/core/iehacks.min.css" rel="stylesheet" type="text/css" />
 		<![endif]-->
@@ -147,6 +154,14 @@
 
 											<div class="ym-fbox">
 												<label>Select a date to view:</label>
+												<!-- Desktop datepicker start -->
+												<!-- <div id="datepicker" class="hasDatepicker">&nbsp;</div> -->
+												<div id="datepicker"></div>
+												<!-- <p>Date: <input type="text" id="datepicker" class="hasDatepicker"></p> -->
+
+												<!-- End Desktop datepicker -->
+
+												<!-- mobile datepicker start -->
 												<div class="mobile-datepicker">
 													<select class="days">
 														<option value="1">1</option>
@@ -202,10 +217,8 @@
 													</select>
 
 												</div>
+												<!-- End mobile datepicker -->
 											</div>
-
-
-
 
 										</div>
 									</div>
@@ -340,11 +353,11 @@
 			</div>
 		</footer>
 
-		<script type="text/javascript" src="js/all.js" async></script>
+		<!-- <script type="text/javascript" src="js/all.js" async></script> -->
 
 		<!-- Date Picker start -->
 		<script type="text/javascript">
-
+			$( "#datepicker" ).datepicker();
 		</script>
 		<!-- End Date Picker -->
 
