@@ -1,6 +1,7 @@
 .pagination-wrap {
   text-align: center;
   margin: 3em auto 0 auto;
+  padding: 0 0 0 1.938em;
   // padding: 1.42857em;
   .pagination {
     display: inline-block;
@@ -11,6 +12,7 @@
       text-decoration: none;
       transition: background-color .3s;
       border: 1px solid $light-grey;
+      background: $white;
       margin: 4px;
       @include border-radius(4px, 4px);
     }
@@ -23,5 +25,11 @@
       background-color: $grey;
       color: $white;
     }
+  }
+  @media screen and (max-width: 800px) {
+    padding: 0 0 0 1.500em;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 0 0 0 1.000em;
   }
 }
