@@ -36,6 +36,7 @@ table {
     border-bottom: none;
   }
 }
+
 .latest-winners {
   th,td {
     padding: .625em;
@@ -44,6 +45,23 @@ table {
 
 }
 
+.table-summary {
+  clear: both;
+  padding: 0.5em 0 0.750em 0;
+  .transaction-date {
+    display: inline-block;
+  }
+  .legend {
+    float: right;
+    ul {
+      list-style-type: none;
+      li {
+        float: left;
+      }
+    }
+  }
+
+}
 
 @media screen and (max-width: 600px) {
   table {
