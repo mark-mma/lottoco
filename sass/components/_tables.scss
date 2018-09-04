@@ -21,7 +21,8 @@ table {
   th,td {
     // padding: .625em;
     // text-align: center;
-    padding: .625em 1.5em;
+    // padding: .625em 1.5em;
+    padding: .625em 1em;
     text-align: left;
   }
   td {
@@ -137,6 +138,9 @@ table {
         border-bottom: 0;
       }
     }
+    th,td {
+      padding: .625em 0.75em;
+    }
     .draw-date,
     .category {
       background-color: $black;
@@ -154,6 +158,13 @@ table {
           }
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  table {
+    th,td {
+      padding: .625em;
     }
   }
 }
