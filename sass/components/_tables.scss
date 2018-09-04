@@ -156,16 +156,22 @@ table {
       }
     }
   }
-
 }
 @media screen and (max-width: 300px) {
-  #table-legend {
-    li {
-      display: block;
-      margin-left: 0;
-      margin-bottom: 5px;
-      &:last-child {
-        margin-bottom: 0;
+  .table-summary {
+    .legend {
+      padding: 0;
+      #table-legend {
+        margin-bottom: 1.125em;
+        li {
+          display: block;
+          float: none;
+          margin-left: 0;
+          margin-bottom: 5px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }
