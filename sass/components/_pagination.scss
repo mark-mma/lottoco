@@ -1,0 +1,27 @@
+.pagination-wrap {
+  text-align: center;
+  margin: 3em auto 0 auto;
+  // padding: 1.42857em;
+  .pagination {
+    display: inline-block;
+    a {
+      color: $mid-grey;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+      border: 1px solid $light-grey;
+      margin: 4px;
+      @include border-radius(4px, 4px);
+    }
+    a.active {
+      background-color: $grey;
+      color: $white;
+      border: 1px solid $grey;
+    }
+    a:hover:not(.active) {
+      background-color: $grey;
+      color: $white;
+    }
+  }
+}
