@@ -50,15 +50,51 @@ table {
   padding: 0.5em 0 0.750em 0;
   .transaction-date {
     display: inline-block;
+    padding: 0 0 0.5em 0;
   }
   .legend {
     float: right;
+    padding: 0 0 0.5em 0;
+    font-size: 90%;
+    .winning-symbol,
+    .bonus-symbol {
+      svg {
+        position: relative;
+        top:1px;
+      }
+    }
+    .winning-symbol{
+      svg {
+        fill: $grey;
+      }
+    }
+    .bonus-symbol{
+      svg {
+        fill: $black;
+      }
+    }
     ul {
       list-style-type: none;
       li {
         float: left;
       }
     }
+  }
+
+}
+.ticket-table {
+  .bonus-number,
+  .winning-number {
+    // border-radius: 50%;
+    color: $white;
+    padding: 0 3px;
+    margin: 0 3px;
+  }
+  .bonus-number {
+    background: $black;
+  }
+  .winning-number {
+    background: $grey;
   }
 
 }
