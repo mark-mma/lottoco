@@ -229,8 +229,20 @@
 											</div>
 											<div class="legend">
 												<ul id="table-legend">
-													<li class="winning">Winning Number</li>
-													<li class="bonus">Bonus Number</li>
+													<li class="winning-symbol">
+														<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+															 viewBox="0 0 18 18" style="enable-background:new 0 0 18 18; width:15px; fill:#333;">
+														<circle  cx="7.5" cy="7.5" r="7.5"/>
+														</svg>
+														Winning Number
+													</li>
+													<li class="bonus-symbol">
+														<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+															 viewBox="0 0 18 18" style="enable-background:new 0 0 18 18; width:15px; fill:#333;">
+														<circle  cx="7.5" cy="7.5" r="7.5"/>
+														</svg>
+														Bonus Number
+													</li>
 												</ul>
 											</div>
 										</div>
@@ -249,13 +261,19 @@
 										    <tr>
 										      <td scope="row" data-label="DATE">00/00/2018</td>
 										      <td data-label="TICKET ID">ABC12345</td>
-										      <td data-label="TICKET NUMBER">1*2*3*4*5*6+<span class="bouns-number">7</span></td>
+										      <td data-label="TICKET NUMBER">1*2*3*4*5*6+<span class="bonus-number">7</span></td>
 													<td data-label="TICKET STATUS">Open</td>
 										    </tr>
 												<tr>
 										      <td scope="row" data-label="DATE">00/00/2018</td>
 										      <td data-label="TICKET ID">DEF67890</td>
-										      <td data-label="TICKET NUMBER">1*2*3*4*5*6+<span class="bouns-number">7</span></td>
+										      <td data-label="TICKET NUMBER">1*<span class="winning-number">2</span>*3*4*5*6+7</td>
+													<td data-label="TICKET STATUS">Closed</td>
+										    </tr>
+												<tr>
+										      <td scope="row" data-label="DATE">00/00/2018</td>
+										      <td data-label="TICKET ID">GH112345</td>
+										      <td data-label="TICKET NUMBER">1*2*<span class="winning-number">3</span>*4*5*6+<span class="bonus-number">7</span></td>
 													<td data-label="TICKET STATUS">Closed</td>
 										    </tr>
 
