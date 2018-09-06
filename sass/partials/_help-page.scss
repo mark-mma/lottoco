@@ -17,7 +17,17 @@
     }
   }
 }
-.faq-content {
+.faqs-content {
+  padding-bottom: 1.438em;
+  margin-bottom: 1.438em;
+  h3, h4 {
+    margin-top: 1.438em;
+    margin-bottom: 0.438em;
+    color: $grey;
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
   .accordion-wrap {
     min-height: 0;
     min-width: 220px;
@@ -26,15 +36,17 @@
     margin: 0px!important;
   }
   .accordion-wrap .ac-label {
-    font-family: Arial, sans-serif;
     padding: 5px 20px;
     position: relative;
     display: block;
     height: auto;
     cursor: pointer;
-    color: #777;
+    // color: #777;
+    color: $grey;
+    font-size: 120%;
+    font-weight: bold;
     line-height: 33px;
-    font-size: 19px;
+    // font-size: 19px;
     background: #E0E0E0;
     border: 1px solid $background-grey;
   }
@@ -68,12 +80,16 @@
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .accordion-wrap .article p {
+  .accordion-wrap .article ol {
     // color: #777;
     // line-height: 23px;
     // font-size: 14px;
     // padding: 10px;
     padding: 15px 20px 0 20px;
+  }
+  .accordion-wrap .article p {
+    padding: 15px 20px 0 20px;
+    margin-bottom: 1em;
   }
   .accordion-wrap input:checked ~ .article i {
     -webkit-transition: all 0.5s ease-in-out;
@@ -84,6 +100,7 @@
   }
   .accordion-wrap input:checked ~ .article.ac-content {
     height: auto;
+    background-color: $white;
   }
 
   .accordion-wrap i {
@@ -97,6 +114,7 @@
   }
   .accordion-wrap input:checked ~ .ac-label i:after {
     transform: translate(-2px, 0) rotate(45deg);
+    color: $white;
   }
   .accordion-wrap i:before, .accordion-wrap i:after {
     content: "";
@@ -123,20 +141,31 @@
     text-align: left;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
+    [class*="ym-g"],
+    [class*="ym-gbox"] {
+      display: block;
+      float: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
       .accordion-wrap .ac-label {
-      font-family: Arial, sans-serif;
-      padding: 5px 20px;
+      padding: 10px 20px;
       position: relative;
       display: block;
       height: auto;
       padding-right: 40px;
       cursor: pointer;
-      color: #777;
-      line-height: 33px;
-      font-size: 19px;
-      background: #EFEFEF;
-      border: 1px solid #CCC;
+
+      font-size: 100%;
+      font-weight: bold;
+      line-height: 1.5;
+      // color: #777;
+      // line-height: 33px;
+      // font-size: 19px;
+      // background: #EFEFEF;
+      // border: 1px solid $background-grey;
     }
     .accordion-wrap i {
       position: absolute;
@@ -145,4 +174,5 @@
       right: 0;
     }
   }
+
 }
