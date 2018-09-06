@@ -3,7 +3,8 @@
   margin-top: 15px;
 
   @media screen and (max-width: 768px) {
-    border: 1px $light-grey solid;
+    border-right: 1px $light-grey solid;
+    border-left: 1px $light-grey solid;
   }
 
 }
