@@ -3,7 +3,8 @@
     min-width: 0;
   }
 }
-.general-content {
+.general-content,
+.faqs-content {
   background: $background-grey;
   padding: 1.42857em;
   overflow: hidden;
