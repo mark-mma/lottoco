@@ -102,7 +102,6 @@
     height: auto;
     background-color: $white;
   }
-
   .accordion-wrap i {
     position: absolute;
     transform: translate(-30px, 0);
@@ -142,14 +141,7 @@
   }
 
   @media (max-width: 600px) {
-    [class*="ym-g"],
-    [class*="ym-gbox"] {
-      display: block;
-      float: none;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-    }
+    
       .accordion-wrap .ac-label {
       padding: 10px 20px;
       position: relative;
