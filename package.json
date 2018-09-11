@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mark-mma/mark-mma.github.io/issues"
   },
-  "homepage": "https://github.com/mark-mma/mark-mma.github.io#readme"
+  "homepage": "https://github.com/mark-mma/mark-mma.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
