@@ -2525,6 +2525,9 @@ main {
     margin: 20px 0 20px 20px; }
   .faqs-content table.ac-table th {
     text-align: left; }
+  .faqs-content .g-test-55 p {
+    font-size: 8px;
+    color: black; }
   @media (max-width: 600px) {
     .faqs-content .accordion-wrap .ac-label {
       padding: 10px 20px;
