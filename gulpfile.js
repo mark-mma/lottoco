@@ -6,8 +6,16 @@ var cssnano = require('gulp-cssnano');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
+// gulp.task ('sass', function() {
+//     return gulp.src ('./sass/*.scss')
+//       .pipe(sass())
+//       .pipe(gulp.dest('./stylesheets'));
+//   }
+// )
+// gulp.task('default',['sass']);
+
 gulp.task('workflow', function () {
-  gulp.src('sass/*.scss')
+  gulp.src('./sass/*.scss')
 
   .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -16,12 +24,12 @@ gulp.task('workflow', function () {
       cascade: false
     }))
     .pipe(cssnano())
-    .pipe(sourcemaps.write('stylesheets/'))
+    .pipe(sourcemaps.write('./'))
 
 
-  .pipe(gulp.dest('stylesheets/'))
+  .pipe(gulp.dest('./stylesheets/dist/'))
 });
 
 gulp.task('default', function () {
-  gulp.watch('sass/*.scss', ['workflow']);
+  gulp.watch('./sass/*.scss', ['workflow']);
 });
