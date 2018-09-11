@@ -14,7 +14,8 @@
       border: 1px solid $light-grey;
       background: $white;
       margin: 4px;
-      @include border-radius(4px, 4px);
+      // @include border-radius(4px, 4px);
+      border-radius: 4px 4px;
     }
     a.active {
       background-color: $grey;

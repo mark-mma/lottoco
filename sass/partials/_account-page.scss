@@ -138,7 +138,8 @@
     background: $light-grey;
     // padding: 0 0 0.063em 0 ;
     padding: 0 3px 0 1px;
-    @include border-radius(3px, 3px);
+    // @include border-radius(3px, 3px);
+    border-radius: 3px 3px;
     font-weight: normal;
     }
     table th, table td {

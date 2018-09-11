@@ -142,16 +142,16 @@
     padding-left: 40px;
     list-style-type: disc;
   }
-
   table.ac-table {
     margin: 20px 0 20px 20px;
   }
   table.ac-table th{
     text-align: left;
   }
-
+  .test {
+    
+  }
   @media (max-width: 600px) {
-
       .accordion-wrap .ac-label {
       padding: 10px 20px;
       position: relative;
@@ -159,7 +159,6 @@
       height: auto;
       padding-right: 40px;
       cursor: pointer;
-
       font-size: 100%;
       font-weight: bold;
       line-height: 1.5;
@@ -176,5 +175,4 @@
       right: 0;
     }
   }
-
 }
