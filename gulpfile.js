@@ -8,6 +8,9 @@ var cssnano = require('gulp-cssnano');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+
 //Watch for 'Ctrl + C' on Windows and end gulp process
 if (process.platform === "win32") {
   require("readline")
@@ -20,9 +23,9 @@ if (process.platform === "win32") {
     });
 }
 process.on("SIGINT", function () {
-  // graceful shutdown
   process.exit();
 });
+
 // Start CSS tasks
 gulp.task('css-tasks', function () {
 	gulp.src('sass/*.scss')
@@ -37,11 +40,28 @@ gulp.task('css-tasks', function () {
 
 	.pipe(gulp.dest('stylesheets/'))
 });
+// End CSS tasks
 
+// Start JS tasks
+gulp.task('js-scripts', function(){
+  gulp.src([
+    'js/jquery-3.3.1.min.js',
+    'js/jquery-ui.min.js',
+    'js/html5shiv.js',
+    'js/yaml-focusfix.js',
+    'js/test.js'
+  ])
+    .pipe(concat('all-min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('js/dist'));
+});
+// End JS tasks
+
+// Start watch task
 gulp.task('default', function () {
+  gulp.watch('js/*.js', ['js-scripts']);
 	gulp.watch('sass/**/*.scss', ['css-tasks']);
 });
-// End CSS tasks
 
 // Start gulp tasks
 // gulp.task('sass', function(){
