@@ -11,6 +11,4 @@
 2. `css-tasks` compiles the .scss and minifies it to the stylesheets folder.
 3. `js-scripts` compiles all the .js files in the js folder and minifies them to the js/dist folder.
 
-### Gulp modules set as 'variables'
-
 * CSS framework built on [YAML](http://www.yaml.de/)
