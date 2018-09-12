@@ -8,7 +8,9 @@ var cssnano = require('gulp-cssnano');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
-var uglify = require('gulp-uglify');
+// var uglify = require('gulp-uglify');
+//Compile ES6+ files
+var terser = require('gulp-terser');
 var concat = require('gulp-concat');
 
 //Watch for 'Ctrl + C' on Windows and end gulp process
@@ -43,18 +45,36 @@ gulp.task('css-tasks', function () {
 // End CSS tasks
 
 // Start JS tasks
+
 gulp.task('js-scripts', function(){
   gulp.src([
     'js/jquery-3.3.1.min.js',
     'js/jquery-ui.min.js',
     'js/html5shiv.js',
     'js/yaml-focusfix.js',
-    'js/test.js'
+    'js/lottoco.js',
+    'js/test.js',
   ])
     .pipe(concat('all-min.js'))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(gulp.dest('js/dist'));
 });
+
+
+
+// gulp.task('js-scripts', function(){
+//   gulp.src([
+//     'js/jquery-3.3.1.min.js',
+//     'js/jquery-ui.min.js',
+//     'js/html5shiv.js',
+//     'js/yaml-focusfix.js',
+//     'js/test.js'
+//   ])
+//     .pipe(concat('all-min.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest('js/dist'));
+// });
+
 // End JS tasks
 
 // Start watch task

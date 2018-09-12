@@ -1,2 +1,2 @@
 var a = testFunction();
-var b = testFunctionzz();
+var b = testFunctiongg();
