@@ -1,6 +1,5 @@
 /**
 Lottoco main client side number picking logic.
-
 **/
 
 Lottoco = function () {
@@ -388,10 +387,10 @@ Lottoco.prototype.addTicket = function (e) {
                 </td>
             </tr>
             </tbody>
-    
+
         </table>
         <input id="selected_lucky_numbers_grid`+next_grid+`" name="selected_lucky_numbers_grid`+next_grid+`" type="text" value="">
-    
+
         <p class="errors_p_grid`+next_grid+`">
         </p>
     `

@@ -52,8 +52,8 @@ gulp.task('js-scripts', function(){
     'js/jquery-ui.min.js',
     'js/html5shiv.js',
     'js/yaml-focusfix.js',
-    'js/lottoco.js',
-    'js/test.js',
+    'js/lottoco.js'
+    // 'js/test.js',
   ])
     .pipe(concat('all-min.js'))
     .pipe(terser())

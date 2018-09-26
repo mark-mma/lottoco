@@ -145,8 +145,8 @@
 							<p class="intro">Pick your choice of numbers between 1- 49 and a bonus number between 0-9</p>
 							<div class="ym-grid linearize-level-1">
 
-								<form method="POST" action="http://localhost:8888/mark-mma.github.io/">
-									  <input id="csrf_token" name="csrf_token" type="hidden" value="">
+								<form method="POST" action="http://localhost:8888/mark-mma.github.io/index.html">
+									<input id="csrf_token" name="csrf_token" type="hidden" value="">
 
 
 									<div class="ym-g50 ym-gl">
@@ -403,6 +403,15 @@
 											</div>
 										</div>
 									</div>
+									<br>
+									<script type="text/javascript">
+											GRID_MAX = 1
+									</script>
+									<button class="add_ticket">Add Ticket</button>
+							    <br>
+							    <p class="total_cost">Total Cost. Ksh.100</p>
+							    <br>
+							    <input id="submit" name="submit" type="submit" value="Submit Lucky Nos">
 
 
 								</form>
@@ -655,7 +664,13 @@
 			</div>
 		</footer>
 
-		<script type="text/javascript" src="js/dist/all-min.js" async></script>
+		<!-- <script type="text/javascript" src="js/dist/all-min.js" async></script> -->
+		<script
+			  src="https://code.jquery.com/jquery-1.10.2.min.js"
+			  integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg="
+			  crossorigin="anonymous">
+		</script>
+		<script type="text/javascript" src="js/lottoco.js"></script>
 		<!-- Responsive Nav start -->
 		<script type="text/javascript">
 			function myFunction() {
