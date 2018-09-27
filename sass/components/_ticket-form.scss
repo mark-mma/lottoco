@@ -1,0 +1,12 @@
+.ticket-wrap {
+  table {
+    tr {
+      background-color: $white;
+      border: 1px solid $light-grey;
+      padding: 0.35em;
+      &:nth-child(even) {
+         background: $white;
+      }
+    }
+  }
+}
