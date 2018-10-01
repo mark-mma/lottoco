@@ -1,13 +1,37 @@
 .ticket-wrap {
+  .ym-gbox{
+    padding: 0 0.5em;
+  }
   .ticket-numbers {
+    padding: 0.75em 0 0 0;
+    background-color: $white;
+    border: 1px solid $mid-grey;
+    margin-bottom: 10px;
     h5 {
       font-size: 95%;
     }
+    .picked-numbers-wrap {
+      background-color: $background-grey;
+      padding: 10px 0;
+      button {
+        padding: 5px 7px;
+        margin: 5px auto;
+      }
+    }
+    .picked-numbers {
+      padding: 5px 5px;
+      margin-bottom: 5px;
+    }
+    span {
+      font-size: 90%;
+    }
   }
   table {
+    border: none;
     tr {
       background-color: $white;
-      border: 1px solid $light-grey;
+      // border: 1px solid $light-grey;
+      border: none;
       padding: 0.35em;
       &:nth-child(even) {
          background: $white;
@@ -17,6 +41,7 @@
     .clear {
       button {
         padding: 4px 5px;
+        margin-bottom: 7px;
       }
     }
     .numbers {
