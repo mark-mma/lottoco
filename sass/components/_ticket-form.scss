@@ -45,11 +45,19 @@
       }
     }
     .numbers {
+      #single-number{
+        button {
+          padding: 5px 10px;
+        }
+
+      }
       td {
         // margin: 15px;
       }
       button {
         padding: 5px 7px;
+        background: $background-grey;
+        border: 1px $light-grey solid;
       }
     }
   }
