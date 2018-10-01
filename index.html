@@ -143,12 +143,10 @@
 						<section class="full-width-content">
 							<h3>PLAY NOW</h3>
 							<p class="intro">Pick your choice of numbers between 1- 49 and a bonus number between 0-9</p>
-							<div class="ym-grid linearize-level-1">
+
 
 								<form method="POST" action="#">
 									<input id="csrf_token" name="csrf_token" type="hidden" value="">
-
-
 									<div class="ym-g20 ym-gl">
 										<div class="ticket-wrap">
 											<div class="ym-gbox">
@@ -161,11 +159,7 @@
 											                <button class="autopick">Autopick Numbers</button>
 											            </td>
 											        </tr>
-											        <!-- <tr class="">
-											            <td class="clear" colspan="2">
-											                <button class="clear_selection">Clear Numbers</button>
-											            </td>
-											        </tr> -->
+
 											        <tr class="numbers">
 											            <td id="single-number" class="n" colspan="3">
 											                <button class="pick_single_digit" id="1_grid1">1</button>
@@ -390,19 +384,27 @@
 											</div>
 										</div>
 									</div>
-									<br>
-									<script type="text/javascript">
-											GRID_MAX = 1
-									</script>
-									<button class="add_ticket">Add Ticket</button>
-							    <br>
-							    <p class="total_cost">Total Cost. Ksh.100</p>
-							    <br>
-							    <input id="submit" name="submit" type="submit" value="Buy Tickets">
 
+
+
+									<div class="ticket-summary-wrap">
+										<!-- <script type="text/javascript">
+												GRID_MAX = 1
+										</script> -->
+										<button class="add_ticket">Add Ticket</button>
+								    <br>
+								    <span class="total_cost">Total Cost. Ksh.100</span>
+								    <br>
+								    <input id="submit" name="submit" type="submit" value="Buy Tickets">
+									</div>
+									<div class="ym-g20 ym-gl">
+										<script type="text/javascript">
+												GRID_MAX = 1
+										</script>
+									</div>
 
 								</form>
-						</div>
+
 						</section>
 					</div>
 				</div>
