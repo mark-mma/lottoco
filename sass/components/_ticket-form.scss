@@ -1,4 +1,9 @@
 .ticket-wrap {
+  .ticket-numbers {
+    h5 {
+      font-size: 95%;
+    }
+  }
   table {
     tr {
       background-color: $white;
@@ -6,6 +11,20 @@
       padding: 0.35em;
       &:nth-child(even) {
          background: $white;
+      }
+    }
+    .autopick,
+    .clear {
+      button {
+        padding: 5px 7px;
+      }
+    }
+    .numbers {
+      td {
+        // margin: 15px;
+      }
+      button {
+        padding: 5px 7px;
       }
     }
   }
