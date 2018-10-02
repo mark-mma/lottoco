@@ -109,7 +109,7 @@
 		</header>
 
 		<main>
-			<div class="full-width-wrapper help-faqs-content">
+			<div class="full-width-wrapper help-faqs-wrap">
 				<div class="ym-wrapper">
 					<div class="ym-grid linearize-level-1">
 						<section class="full-width-content">
@@ -428,6 +428,22 @@
 			}
 			</script>
 			<!-- End Responsive Nav -->
+			<!-- Smooth scroll start -->
+	    <script type="text/javascript">
+	      $(document).ready(function($) {
+	        $('a[href^="#"]').bind('click.smoothscroll', function(e) {
+	        e.preventDefault();
+	        var target = this.hash;
+
+	            $('html, body').stop().animate({
+	                'scrollTop' : $(target).offset().top
+	            }, 900, 'swing', function() {
+	                window.location.hash = target;
+	            });
+	        });
+	      });
+	    </script>
+			<!-- End Smooth scroll start -->
 
 	</body>
 </html>
