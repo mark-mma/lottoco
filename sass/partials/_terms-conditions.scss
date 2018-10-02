@@ -1,0 +1,20 @@
+.terms-conditions-wrap {
+  h4 {
+    margin-bottom: 0.5em;
+  }
+  .terms-content {
+    padding-top: 0;
+    p {
+      text-indent: -1.25em;
+      margin-left: 20px;
+    }
+    #roman-o-list {
+      list-style-type: lower-roman!important;
+      line-height: 1.65;
+      font-size: 90%;
+      margin-top: -10px;
+      margin-bottom: 0;
+      margin-left: 1.75em;
+    }
+  }
+}
